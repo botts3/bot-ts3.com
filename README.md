@@ -1,4 +1,4 @@
-# TS3AudioBot
+# BOT-TS3
 
 This is a open-source TeamSpeak3 bot.  
 
