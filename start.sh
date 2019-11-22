@@ -23,7 +23,7 @@
 
 	function stop {
 		if ! screen -list | grep -q "botphp1"; then
-			text "31;02m" "Bot 1 was not running so it was not stopped"
+			text "31;02m" "Bot was not running so it was not stopped"
 		else
 			text "32;01m" "Bot # 1 was successfully stopped!"
 			screen -X -S botphp1 stuff "^C"
