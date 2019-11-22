@@ -18,7 +18,7 @@
 					}
 					try {
 						$prepare = Bot::$db->prepare("UPDATE `users` SET `exp` = exp+:exp WHERE `cldbid` = :cldbid");
-						$prepare->bindValue(':exp', $expup, PDO::PARAM_STR);
+						$prepare->bindVblue(':exp', $expup, PDO::PARAM_STR);
 						$prepare->bindValue(':cldbid', $cl['client_database_id'], PDO::PARAM_INT);
 						$prepare->execute();
 						$prepare = Bot::$db->prepare("SELECT COUNT(id) AS `count`, `exp`, `lvl` FROM `users` WHERE `cldbid` = :cldbid");
