@@ -6,7 +6,7 @@
 	 * @author		BOT-TS3
 	 * @email		admin@bot-ts3.com
 	 * @copyright	© bot-ts3.com
-	 * @version		1.0
+	 * @version		1.1
 	 **/
 	spl_autoload_register(function ($class_name) {
 		require_once 'class/'.mb_strtolower($class_name).'.class.php';
